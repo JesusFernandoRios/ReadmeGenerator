@@ -1,5 +1,5 @@
 // array of questions for user
-
+const fs = require('fs');
 const inquirer = require("inquirer");
 
 // const inquirer = require('inquirer')
@@ -11,7 +11,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'Hello, What would you like the title of your readme to be.'
+        message: 'Hello, please name your application. (this will become the main header of the README)'
       },
       {
         type: 'input',
@@ -31,18 +31,18 @@ const questions = [
       {
           type: 'input',
           name: 'license',
-          message: 'Would you like to licence your application? (ex. MIT, GPL)' 
+          message: 'Would you like to licence your application? (ex. MIT, GPL , none)' 
       },
       {
           type: 'input',
           name: 'contributors',
           message: 'Would you like to list any contributors? if none type NA' 
       },
-      {
-          type: 'input',
-          name: 'bio',
-          message: 'Tell me something about yourself.' 
-      }
+    //   {
+    //       type: 'input',
+    //       name: 'bio',
+    //       message: 'Tell me something about yourself.' 
+    //   }
 
 ];
 
@@ -54,6 +54,39 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((answers) => {
         console.log(answers)
+
+
+        const readMeContent = `
+        
+        # ${answers.title}
+            
+        ## Description
+        ${answers.description}
+            
+        ## Installation Guide
+        ${answers.install}
+            
+        ## How to use
+        ${answers.usage}
+            
+        ## License
+        ${answers.license}
+            
+        ## Contributors
+        ${answers.contributors}
+        ` 
+
+        
+
+
+    fs.writeFile('NewREADME.md', readMeContent, (err) =>{
+        if(err){
+            throw err
+        } else {
+            console.log('Your Information has been logged!')
+        }
+    
+        })
     })
 }
 
