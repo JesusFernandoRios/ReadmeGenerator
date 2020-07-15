@@ -47,8 +47,8 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+// function writeToFile(fileName, data) {
+// }
 
 // function to initialize program
 function init() {
@@ -56,25 +56,28 @@ function init() {
         console.log(answers)
 
 
-        const readMeContent = `
+        const readMeContent = `# ${answers.title}
+
+## Description
+${answers.description}
+
+## Table of Contents
+* [Questions](#Questions)
+* [Usage](#Usage)
+* [Installation](#Installation Guide)
+* [Contributors](#Contributors)
+
+## Installation
+${answers.install}
         
-        # ${answers.title}
-            
-        ## Description
-        ${answers.description}
-            
-        ## Installation Guide
-        ${answers.install}
-            
-        ## How to use
-        ${answers.usage}
-            
-        ## License
-        ${answers.license}
-            
-        ## Contributors
-        ${answers.contributors}
-        ` 
+## Usage
+${answers.usage}
+        
+## License
+${answers.license}
+        
+## Contributors
+${answers.contributors}` 
 
         
 
