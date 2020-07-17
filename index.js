@@ -3,13 +3,6 @@ const fs = require('fs');
 const inquirer = require("inquirer");
 const Choices = require('inquirer/lib/objects/choices');
 
-// const inquirer = require('inquirer')
-
-// licences for readme 
-// GNU [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
-// MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-// IBM PLV [![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
-
 const questions = [
     {
         type: 'input',
@@ -55,6 +48,7 @@ const questions = [
 
 ];
 
+// will only use this function if needed 
 // function to write README file
 // function writeToFile(fileName, data) {
 // }
@@ -73,7 +67,7 @@ function init() {
             answers.license ="[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)"
        }
 
-        
+        // Generated Readme Content
         const readMeContent = `# ${answers.title}            
 ## License 
 ${answers.license}                                 

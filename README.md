@@ -3,7 +3,7 @@
 ![Screenshot](screenshot.png)
 
 ## Description
-This application was created with developers in mind. It will help create professional README files with ease by just filling out several prompts using Inquirer on Node.
+This Command-line application was created with developers in mind. It will help create professional README files with ease by just filling out several prompts using Inquirer on Node.
 The prompts are a set of questions regarding a description, installation guide, licence, etc.
 
 ## Installation Guide
