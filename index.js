@@ -63,14 +63,8 @@ const questions = [
 function init() {
     inquirer.prompt(questions).then((answers) => {
         console.log(answers)
-
-        let gnu = "[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)"
-
-        let mit = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-
-        let ibm = "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)"
         
-        
+        // license input badges 
         if(answers.license == 'MIT'){
             answers.license ="[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
        }if(answers.license == 'GNU 3.0'){
