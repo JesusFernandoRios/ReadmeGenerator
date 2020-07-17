@@ -1,24 +1,24 @@
 # Readme Generator            
-## License                                     
+## License 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)                                 
 
 ## Description
-This application creates readme files by using information provided by the user. It creates a professional Readme Template.
+This application was created with developers in mind. It will help create professional README files with ease by just filling out several prompts using Inquirer on Node. The prompts are a set of questions regarding a description, installation guide, licence, etc.
 
 ## Table of Contents
-* [Questions](#Questions)
-* [Usage](#Usage)
 * [Installation](#Installation-Guide)
+* [Usage](#Usage)
 * [Contributors](#Contributors)
 * [Contact-Information](#contact-Information)
 
 ## Installation Guide
-clone or download this repository
+So far the way to use this application is to clone or download this repository.
         
 ## Usage
-once cloned or downloaded, using your terminal do an npm install in the repo folder then run index.js using node
+Once you have cloned or downloaded the repository, run NPM Install in your terminal, after that run node index.js and follow the command-line prompts.
         
 ## Contributors
 Jesus Rios
 
 ## Contact Information
-github username - fakefakefake E-mail - fakename@fakeemail.com
+aashdhasdhas

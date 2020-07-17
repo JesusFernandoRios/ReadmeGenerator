@@ -64,17 +64,32 @@ function init() {
     inquirer.prompt(questions).then((answers) => {
         console.log(answers)
 
+        let gnu = "[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)"
 
+        let mit = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+
+        let ibm = "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)"
+        
+        
+        if(answers.license == 'MIT'){
+            answers.license ="[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+       }if(answers.license == 'GNU 3.0'){
+            answers.license ="[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)"
+       }if(answers.license == 'IBM'){
+            answers.license ="[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)"
+       }
+
+        
         const readMeContent = `# ${answers.title}            
-## License ${answers.license}                                    
+## License 
+${answers.license}                                 
 
 ## Description
 ${answers.description}
 
 ## Table of Contents
-* [Questions](#Questions)
-* [Usage](#Usage)
 * [Installation](#Installation-Guide)
+* [Usage](#Usage)
 * [Contributors](#Contributors)
 * [Contact-Information](#contact-Information)
 
