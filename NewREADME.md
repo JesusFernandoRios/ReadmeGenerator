@@ -1,9 +1,9 @@
-# Readme Generator            
+# Demo Application            
 ## License 
-[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)                                 
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)                                 
 
 ## Description
-This application is for developers that would liek to get the readme part of their projects out of the way asap
+This is a test, simply to test out this command-line application 
 
 ## Table of Contents
 * [Installation](#Installation-Guide)
@@ -15,11 +15,12 @@ This application is for developers that would liek to get the readme part of the
 clone or download this repository
         
 ## Usage
-once cloned or downloaded, run npm install on your terminal inside the downloaded folder, once that is complete simply run node index.js and follow the prompts
+once downloaded using your terminal run npm install once completed simply run node index.js and follow the prompts
         
 ## Contributors
-Just me 
+Jesus Rios
 
 ## Contact Information
 Github Username - [JesusFernandoRios](http://github.com/JesusFernandoRios)
-E-mail - Fakename@fakeemail.com
+
+E-mail - fakename@fakeemail.com
