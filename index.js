@@ -43,8 +43,14 @@ const questions = [
       {
         type: 'input',
         name: 'contact',
-        message: 'How can users contact your for questions or concerns' 
-    }
+        message: 'This section is will contain your contact information. Please enter your Github username' 
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Please provide an E-mail as contact information' 
+    },
+
 
 ];
 
@@ -91,7 +97,9 @@ ${answers.usage}
 ${answers.contributors}
 
 ## Contact Information
-${answers.contact}
+Github Username - [${answers.contact}](http://github.com/${answers.contact})
+
+E-mail - ${answers.email}
 ` 
 
     fs.writeFile('NewREADME.md', readMeContent, (err) =>{
